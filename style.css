@@ -1,0 +1,208 @@
+/* -------------------------- */
+/* General Body & Background */
+/* -------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: url('https://wallpapercave.com/wp/wp5148408.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+
+/* -------------------------- */
+/* Homepage (Page 1) Styles */
+/* -------------------------- */
+.home-container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Cursive Title */
+.home-container h1 {
+    font-family: 'pacifico', cursive;
+    font-size: 70px;
+    margin-bottom: 0;
+    color: #ffdbff;
+}
+
+/* "By SAM!" subtitle */
+.home-container h2 {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    color: #ff9cf3;
+}
+
+/* Simple subtitle line */
+.home-container p {
+    font-size: 20px;
+    opacity: 0.9;
+    margin-bottom: 35px;
+}
+
+/* Start Button */
+.start-btn {
+    display: inline-block;
+    background: #901f92;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: #901f92;
+    transform: scale(1.08);
+}
+
+/* -------------------------- */
+/* Category Page (Page 2) Styles */
+/* -------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: url('https://wallpapercave.com/wp/wp5148408.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Card glow */
+.category-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Transparent card with glowing border */
+.category-card {
+    background: rgba(1, 1, 1, 0.4);
+    border: 5px solid #9b59b6; /* purple border */
+    border-radius: 50px;
+    box-shadow: 0 0 20px #9b59b6; /* purple glow */
+    padding: 60px 40px;           /* increased vertical padding for taller card */
+    text-align: center;
+    width: 450px;
+    backdrop-filter: blur(5px);
+}
+
+/* Make buttons bigger and stacked */
+.category-buttons {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    gap: 15px;              /* space between buttons */
+    margin-top: 20px;
+}
+
+.category-buttons button {
+    font-size: 20px;        /* bigger text */
+    padding: 15px 25px;     /* bigger buttons */
+}
+
+/* Buttons hover glow */
+.category-buttons button:hover {
+    background: #94137c; /* purple hover */
+    color: rgb(158, 96, 177);
+    box-shadow: 0 0 15px #94137c;
+    transform: scale(1.05);
+}
+
+.quiz-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.quiz-card {
+  background: rgba(0, 0, 0, 0.35);
+  border: 2px solid #9b59b6;
+  border-radius: 25px;
+  box-shadow: 0 0 20px #9b59b6;
+  padding: 40px 30px;
+  width: 600px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.5s;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.options button {
+  flex: 1;
+  margin: 0 10px;
+  padding: 15px 0;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: #901f92;
+  color: white;
+  transition: 0.3s;
+}
+
+.options button:hover {
+  background: #9b59b6;
+  box-shadow: 0 0 15px #9b59b6;
+  transform: scale(1.05);
+}
+
+#skip-btn {
+  margin-top: 25px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #ff3497;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+#skip-btn:hover {
+  background: #ff1480;
+  transform: scale(1.05);
+}
+
+#result-box {
+  text-align: center;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Confetti canvas */
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+
+
+

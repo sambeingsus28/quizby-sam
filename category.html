@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Category</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="category-container">
+        <div class="category-card">
+            <h1>Select a Category</h1>
+            <div class="category-buttons">
+                <button onclick="chooseCategory('History')">History</button>
+                <button onclick="chooseCategory('Music')">Music</button>
+                <button onclick="chooseCategory('Movies & TV')">Movies & TV</button>
+                <button onclick="chooseCategory('Sports')">Sports</button>
+                <button onclick="chooseCategory('General Knowledge')">General Knowledge</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function chooseCategory(category) {
+            // Store selected category in localStorage
+            localStorage.setItem('selectedCategory', category);
+
+            // Redirect to quiz page (Page 3)
+            window.location.href = 'quiz.html';
+        }
+    </script>
+
+</body>
+</html>
